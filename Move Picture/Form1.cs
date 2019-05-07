@@ -48,5 +48,27 @@ namespace Move_Picture
             pictureBox1.Location = new Point(pictureBox1.Location.X + 25, pictureBox1.Location.Y - 50);
             await Task.Delay(500);
         }
+
+        private void Up_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 10);
+
+
+        }
+
+        private void Left_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X - 10, pictureBox1.Location.Y);
+        }
+
+        private void Right_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X + 10, pictureBox1.Location.Y);
+        }
+
+        private void Bottom_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X , pictureBox1.Location.Y + 10);
+        }
     }
 }
