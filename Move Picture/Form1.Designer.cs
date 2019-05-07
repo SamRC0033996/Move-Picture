@@ -61,9 +61,9 @@
             // 
             // Left
             // 
-            this.Left.Location = new System.Drawing.Point(538, 231);
+            this.Left.Location = new System.Drawing.Point(556, 227);
             this.Left.Name = "Left";
-            this.Left.Size = new System.Drawing.Size(92, 33);
+            this.Left.Size = new System.Drawing.Size(76, 33);
             this.Left.TabIndex = 4;
             this.Left.Text = "Left";
             this.Left.UseVisualStyleBackColor = true;
@@ -71,9 +71,9 @@
             // 
             // Right
             // 
-            this.Right.Location = new System.Drawing.Point(667, 231);
+            this.Right.Location = new System.Drawing.Point(651, 227);
             this.Right.Name = "Right";
-            this.Right.Size = new System.Drawing.Size(82, 33);
+            this.Right.Size = new System.Drawing.Size(75, 33);
             this.Right.TabIndex = 5;
             this.Right.Text = "Right";
             this.Right.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             // 
             // Bottom
             // 
-            this.Bottom.Location = new System.Drawing.Point(606, 270);
+            this.Bottom.Location = new System.Drawing.Point(606, 266);
             this.Bottom.Name = "Bottom";
             this.Bottom.Size = new System.Drawing.Size(75, 35);
             this.Bottom.TabIndex = 6;
@@ -91,9 +91,9 @@
             // 
             // Square
             // 
-            this.Square.Location = new System.Drawing.Point(57, 365);
+            this.Square.Location = new System.Drawing.Point(57, 352);
             this.Square.Name = "Square";
-            this.Square.Size = new System.Drawing.Size(114, 39);
+            this.Square.Size = new System.Drawing.Size(114, 45);
             this.Square.TabIndex = 7;
             this.Square.Text = "Square";
             this.Square.UseVisualStyleBackColor = true;
@@ -101,9 +101,9 @@
             // 
             // Triangle
             // 
-            this.Triangle.Location = new System.Drawing.Point(57, 281);
+            this.Triangle.Location = new System.Drawing.Point(57, 290);
             this.Triangle.Name = "Triangle";
-            this.Triangle.Size = new System.Drawing.Size(114, 52);
+            this.Triangle.Size = new System.Drawing.Size(114, 43);
             this.Triangle.TabIndex = 8;
             this.Triangle.Text = "Triangle";
             this.Triangle.UseVisualStyleBackColor = true;
