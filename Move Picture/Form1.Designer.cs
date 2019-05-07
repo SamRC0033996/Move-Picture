@@ -36,20 +36,21 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Move_Picture.Properties.Resources.DIVOCK_ORIGI;
-            this.pictureBox1.Location = new System.Drawing.Point(268, 40);
+            this.pictureBox1.Location = new System.Drawing.Point(163, 65);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(485, 320);
+            this.pictureBox1.Size = new System.Drawing.Size(258, 156);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Move
             // 
-            this.Move.Location = new System.Drawing.Point(400, 377);
+            this.Move.Location = new System.Drawing.Point(583, 326);
             this.Move.Name = "Move";
             this.Move.Size = new System.Drawing.Size(126, 39);
             this.Move.TabIndex = 1;
-            this.Move.Text = "button1";
+            this.Move.Text = "Square";
             this.Move.UseVisualStyleBackColor = true;
             this.Move.Click += new System.EventHandler(this.Move_Click);
             // 
