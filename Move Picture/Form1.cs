@@ -30,22 +30,48 @@ namespace Move_Picture
 
         private void Up_Click(object sender, EventArgs e)
         {
-            pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 25);
+            if (pictureBox1.Location.Y - 5 > 0)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 25);
+            }
+            else
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, 0);
+            }
+            
         }
+
 
         private void Left_Click(object sender, EventArgs e)
         {
-            pictureBox1.Location = new Point(pictureBox1.Location.X - 25, pictureBox1.Location.Y);
+            if (pictureBox1.Location.X - 5 > 0)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 25, pictureBox1.Location.Y);
+            }
+            else
+            {
+                pictureBox1.Location = new Point(0, pictureBox1.Location.Y);
+            }
         }
 
         private void Right_Click(object sender, EventArgs e)
         {
-            pictureBox1.Location = new Point(pictureBox1.Location.X + 25, pictureBox1.Location.Y);
+            if (pictureBox1.Location.X + 5 < ClientRectangle.Width - pictureBox1.Width)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 25, pictureBox1.Location.Y);
+            }
         }
 
         private void Bottom_Click(object sender, EventArgs e)
         {
-            pictureBox1.Location = new Point(pictureBox1.Location.X , pictureBox1.Location.Y + 25);
+            if (pictureBox1.Location.Y + 5 < ClientRectangle.Height - pictureBox1.Height)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 25);
+            }
+            else
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, ClientRectangle.Height - pictureBox1.Height);
+            }
         }
 
         private async void Square_Click(object sender, EventArgs e)
