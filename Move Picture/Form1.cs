@@ -38,7 +38,7 @@ namespace Move_Picture
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X, 0);
             }
-            
+
         }
 
 
@@ -94,6 +94,42 @@ namespace Move_Picture
             await Task.Delay(500);
             pictureBox1.Location = new Point(pictureBox1.Location.X + 25, pictureBox1.Location.Y - 50);
             await Task.Delay(500);
+        }
+
+        private async void Left2_Click(object sender, EventArgs e)
+        {
+            while (pictureBox1.Location.X - 5 > 0)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X - 25, pictureBox1.Location.Y);
+                await Task.Delay(100);
+            }
+        }
+
+        private async void Up2_Click(object sender, EventArgs e)
+        {
+            while (pictureBox1.Location.Y - 5 > 0)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 25);
+                await Task.Delay(100);
+            }
+        }
+
+        private async void Right2_Click(object sender, EventArgs e)
+        {
+            while (pictureBox1.Location.X + 5 < ClientRectangle.Width - pictureBox1.Width)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X + 25, pictureBox1.Location.Y);
+                await Task.Delay(100);
+            }
+        }
+
+        private async void Bottom2_Click(object sender, EventArgs e)
+        {
+            while (pictureBox1.Location.Y + 5 < ClientRectangle.Height - pictureBox1.Height)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 25);
+                await Task.Delay(100);
+            }
         }
     }
 }
